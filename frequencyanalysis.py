@@ -38,7 +38,7 @@ def frequencyanalysis(emplst, string):
         else:
             if i in alphabetslst:
                 freq = string.count(i)     #the frequency of the single alphabet would be counted in this single line.
-                freqtuple = (i, freq)      #tuple will be formed with freqtuple[0] having the character anf freqtuple[1] having it's frequency.
+                freqtuple = (i, freq)      #tuple will be formed with freqtuple[0] having the character and freqtuple[1] having it's frequency.
                 emplst.append(freqtuple)   #appends the above tuple in the final frequency list.
                 alphabetslst.remove(i)     #removes the alphabet from the check alphabetslst to avoid repeatation.
     return emplst
